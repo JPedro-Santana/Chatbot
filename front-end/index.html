@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banco Exemplo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Banco Exemplo</h1>
+    <p>Bem-vindo(a) ao seu banco digital.</p>
+  </header>
+
+  <main>
+    <div class="info-card">
+      <h2>Saldo disponível</h2>
+      <p>R$ 2.500,00</p>
+    </div>
+    <div class="info-card">
+      <h2>Últimas movimentações</h2>
+      <ul>
+        <li>Pix recebido - R$ 200,00</li>
+        <li>Pagamento - R$ 150,00</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Botão flutuante da assistente -->
+  <div class="chat-toggle" onclick="toggleChat()">
+    💬 assistente IA
+  </div>
+
+  <!-- Janela da assistente -->
+  <div class="chat-container" id="chatBox">
+    <div class="chat-header">
+      <div>
+        <strong>IA</strong><br/>
+        <small>Sua Assistente Inclusiva</small>
+      </div>
+      <span class="close-btn" onclick="toggleChat()">×</span>
+    </div>
+    <div class="chat-body" id="chat">
+      <div class="message bot">Olá! Como posso ajudar você hoje?</div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="input" placeholder="Digite a sua pergunta..." />
+      <button id="sendBtn">➤</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
